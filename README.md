@@ -1,1 +1,1 @@
-# React + TypeScript + Module Federation + Yarn Workspaces
+# Module Federation + Yarn Workspaces + Launch Darkly Integration
