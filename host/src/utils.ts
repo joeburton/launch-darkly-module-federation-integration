@@ -47,5 +47,5 @@ console.log(
 );
 
 export const getLocale = () => {
-  return 'UK'; // dynamic look up for locale
+  return 'DE'; // dynamic look up for locale
 };

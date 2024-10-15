@@ -7,7 +7,7 @@ import { Layout } from './Layout';
 import { Home } from './Home';
 import { NoMatch } from './NoMatch';
 
-import './App.css';
+import './app.css';
 
 const App = () => {
   return (

@@ -78,7 +78,6 @@ const ControlPanel = () => {
     <>
       <div style={uiContainer}>
         <h3>Standard boolean flags on/ off for all locale's</h3>
-        <Feature feature="New Mini Basket" flag={miniBasket} />
         <Feature feature="Silver Deal" flag={silverDealBanner} />
         <Feature feature="New Carousel" flag={newCarousel} />
         <Feature feature="Enable Header" flag={enableNewHeader} />
@@ -86,9 +85,9 @@ const ControlPanel = () => {
       <div style={uiContainer}>
         <h3>Mini Basket - (boolean flag on/ off for all locale's)</h3>
         {miniBasket ? (
-          <div style={bgGreen}>Mini Basket: Active UK, DE, FR</div>
+          <div style={bgGreen}>Mini Basket: Active</div>
         ) : (
-          <div style={bgRed}>Mini Basket: Inactive UK, DE, FR</div>
+          <div style={bgRed}>Mini Basket: Inactive</div>
         )}
       </div>
       <div style={uiContainer}>

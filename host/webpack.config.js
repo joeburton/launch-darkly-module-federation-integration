@@ -1,11 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ModuleFederationPlugin =
   require('webpack').container.ModuleFederationPlugin;
+const Dotenv = require('dotenv-webpack');
 const path = require('path');
 
 module.exports = {
   entry: './src/index',
-  mode: 'development',
+  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
@@ -53,6 +54,12 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
+    }),
+    new Dotenv({
+      path:
+        process.env.NODE_ENV === 'production'
+          ? './.env.production'
+          : './.env.development',
     }),
   ],
 };

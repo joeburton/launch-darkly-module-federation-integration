@@ -5,10 +5,12 @@ import { asyncWithLDProvider } from 'launchdarkly-react-client-sdk';
 import App from './App';
 import { getBrowserInfo, getLocale } from './utils';
 
+const LAUNCH_DARKLY_CLIENT_ID = process.env.LAUNCH_DARKLY_CLIENT_ID || '';
+
 (async () => {
   // Initialize the LaunchDarkly provider asynchronously
   const LDProvider = await asyncWithLDProvider({
-    clientSideID: '6706972120d9af0861ab5b8f',
+    clientSideID: LAUNCH_DARKLY_CLIENT_ID,
     context: {
       kind: 'user',
       key: '456456',
