@@ -77,7 +77,7 @@ const ControlPanel = () => {
   return (
     <>
       <div style={uiContainer}>
-        <h3>Standard boolean flags on/ off for all locale's</h3>
+        <h3>Standard boolean flags on/ off</h3>
         <Feature feature="Silver Deal" flag={silverDealBanner} />
         <Feature feature="New Carousel" flag={newCarousel} />
         <Feature feature="Enable Header" flag={enableNewHeader} />
@@ -92,7 +92,7 @@ const ControlPanel = () => {
       </div>
       <div style={uiContainer}>
         <h3>
-          Market specific - (boolean flag on for the UK only)/ rollingOffer
+          Market Specific - (boolean flag on for the UK only)/ rollingOffer
         </h3>
         {rollingOffer ? (
           <div style={bgGreen}>Active for the UK</div>
