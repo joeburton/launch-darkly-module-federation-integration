@@ -83,7 +83,7 @@ const ControlPanel = () => {
         <Feature feature="Enable Header" flag={enableNewHeader} />
       </div>
       <div style={uiContainer}>
-        <h3>Mini Basket - (boolean flag on/ off for all locale's)</h3>
+        <h3>Mini Basket - (boolean flag on/ off)</h3>
         {miniBasket ? (
           <div style={bgGreen}>Mini Basket: Active</div>
         ) : (
@@ -131,7 +131,6 @@ const ControlPanel = () => {
           Update locale to [UK]
         </button>
       </div>
-      <div style={uiContainer}></div>
     </>
   );
 };
