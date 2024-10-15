@@ -1,0 +1,52 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid #a4d7b5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  background-color: #e8e9ee;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  background-color: #282828;
+  color: #fff;
+}
+
+nav {
+  background-color: #282828;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  padding: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}

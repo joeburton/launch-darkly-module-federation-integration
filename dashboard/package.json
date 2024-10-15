@@ -1,0 +1,33 @@
+{
+  "name": "dashboard",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "7.15.5",
+    "@babel/preset-react": "7.14.5",
+    "@babel/preset-typescript": "7.15.0",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "babel-loader": "8.2.2",
+    "bundle-loader": "0.5.6",
+    "html-webpack-plugin": "5.3.2",
+    "serve": "12.0.1",
+    "typescript": "4.3.5",
+    "webpack": "5.61.0",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.2.1"
+  },
+  "scripts": {
+    "start": "npx webpack serve --hot --no-cache",
+    "build": "webpack --mode production",
+    "serve": "serve dist -p 3002",
+    "clean": "rm -rf dist && rm -rf node_modules"
+  },
+  "dependencies": {
+    "css-loader": "^7.1.2",
+    "launchdarkly-react-client-sdk": "^3.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "style-loader": "^4.0.0"
+  }
+}
