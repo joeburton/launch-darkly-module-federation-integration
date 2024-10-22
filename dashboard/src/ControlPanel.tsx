@@ -116,19 +116,22 @@ const ControlPanel = () => {
           Custom/ Multivariate flags with different rules for for UK, DE and FR.
         </h3>
         <button
-          onClick={() => updateContext('DE')}
+          onClick={() => updateContext('de')}
           style={{ padding: '10px', marginRight: '10px' }}
         >
-          Update locale to [DE]
+          Update locale to [de/ DE]
         </button>
         <button
-          onClick={() => updateContext('FR')}
+          onClick={() => updateContext('fr')}
           style={{ padding: '10px', marginRight: '10px' }}
         >
-          Update locale to [FR]
+          Update locale to [fr/ FR]
         </button>
-        <button onClick={() => updateContext('UK')} style={{ padding: '10px' }}>
-          Update locale to [UK]
+        <button
+          onClick={() => updateContext('en-GB')}
+          style={{ padding: '10px' }}
+        >
+          Update locale to [UK/ en-GB]
         </button>
       </div>
     </>
